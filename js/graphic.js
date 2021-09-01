@@ -2,9 +2,10 @@ var numbers= [];
 var numbersNum=150;
 
 window.onresize= Draw;
-
+window.onload= Generate;
 
 function Generate(){
+	numbers= [];
 	while(numbers.length < numbersNum){
 		let value=Math.floor(Math.random()* (numbersNum+1));
 		if (numbers.indexOf(value) == -1 && value != 0) {
