@@ -9,3 +9,9 @@
 #Info-container{
 	/*border: 1px solid green;*/
 }
+
+h3{
+	color: orange;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
