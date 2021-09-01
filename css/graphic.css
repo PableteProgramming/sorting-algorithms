@@ -1,0 +1,8 @@
+.Barline{
+	background-color: #FFA800;
+    border-color: #FFA800;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /*margin-top: 2vh;*/
+}
