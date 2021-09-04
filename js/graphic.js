@@ -1,5 +1,6 @@
 var numbers= [];
 var numbersNum=150;
+var sortingalg="Insertion";
 
 window.onresize= Draw;
 window.onload= Generate;
@@ -30,4 +31,12 @@ function Draw(){
 		let line= '<div class="Barline" style="height: '+numbers[i]/2.4+'vh; width: '+barWidth+'px;"></div>';
 			document.getElementById("Graphic-container").innerHTML += line;
 	}
+}
+
+function ChangeSortAlgorithm(name){
+	sortingalg= name;
+}
+
+function Sort(){
+	alert(sortingalg);
 }

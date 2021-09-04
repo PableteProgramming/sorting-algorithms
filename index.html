@@ -39,9 +39,16 @@
 		      		<li class="nav-item">
         				<a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Sorting algorithms</a>
       				</li>
-		      		<li class="nav-item active">
-		        		<a class="nav-link" href="">Home</a>
-		      		</li>
+		      		<li class="nav-item dropdown">
+				    	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Sorting algorithms
+				       	</a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				        	<button class="dropdown-item" type="Button" onclick="ChangeSortAlgorithm('Insertion')">Insertion</button>
+				        	<button class="dropdown-item" type="Button" onclick="ChangeSortAlgorithm('Selection')">Selection</button>
+				        	<button class="dropdown-item" type="Button" onclick="ChangeSortAlgorithm('Bubble')">Bubble</button>
+				        </div>
+				    </li>
 		    	</ul>
 		  	</div>
 		</nav>
@@ -60,7 +67,7 @@
 		<br>
 		<div class="container">
 			<button class="btn btn-primary btn-warning" onclick="Generate()" type="button">Generate</button>
-			<button class="btn btn-primary btn-warning" onclick="alert('Not working yet')" type="button">Sort</button>
+			<button class="btn btn-primary btn-warning" onclick="Sort()" type="button">Sort</button>
 		</div>
 		<br>
 		<!-- End of the graphic container -->
